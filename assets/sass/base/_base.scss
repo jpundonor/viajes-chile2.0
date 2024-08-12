@@ -1,0 +1,7 @@
+@import 'typography';
+
+body {
+    font-family: $primary-font;
+    background-color: $bg-custom-color !important;
+    color: $primary-color !important;
+}

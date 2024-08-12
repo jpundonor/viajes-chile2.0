@@ -1,0 +1,42 @@
+.testimonials {
+  padding: 20px 0;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    max-width: 280px;
+    color: $third-color;
+  }
+  &__text {
+    font-style: italic;
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+  }
+  &__user {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+        padding-bottom: 50px;
+    }
+  }
+}
